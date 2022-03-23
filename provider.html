@@ -1,0 +1,949 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Barrie HomeShare Home Provider Matching Form</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/full-width-pics.css" rel="stylesheet">
+  </head>
+  <style>
+body {
+  background-color: #F2F3F4;
+}
+</style>
+  <body>
+
+    <style>
+      .center {
+      text-align: center;
+      }
+    </style>
+
+    <div class="center">
+      <h1>Barrie HomeShare Home Provider Matching Form</h1>
+      <h2>Personal Information</h2>
+    </div>
+
+    <section id="FullName">
+      <h4 id="FullName_H4">Full Name *</h4>
+    </section>
+    <form>
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" name="fname" required>
+       <label for="lname">Last Name</label>
+       <input type="text" id="lname" name="lname" required>
+    </form>
+    <section id="Gender">
+      <h4 id="Gender_H4">Gender *</h4>
+    </section>
+    <form>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="non" name="gender" value="non" required>
+      <label for="non">Non-Binary</label><br>
+      <input type="radio" id="other" value="">Other <input type="text" name="other" required/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="VSS">
+      <h3 id="VSS_H3">Vulnerable Sector Screening (VSS)</h3>
+      <p id="VSS_P">All participants with the Barrie HomeShare Pilot Project will need to undergo a Vulnerable Sector Screening (VSS) police check. Our staff will assist you in completing this form and Barrie HomeShare will pay the costs. The completed VSS will be mailed to your mailing address directly from Barrie Police Services. Please note that applicants from outside Barrie will need to independently obtain a VSS from their own jurisdiction. Participants must provide a copy of a "Clear" VSS to our staff before they can be matched. This is an important, mandatory step in the process to ensure the safety of all involved. However, the VSS can only be conducted for an individual who has lived in Canada for at least one year.</p>
+    </section>
+    <section id="Criminal">
+      <h4 id="Criminal_H4">Have you been convicted of a criminal offence for which a pardon has not been granted under the Criminal Code of Canada? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="criminal" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="criminal" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="Charges">
+      <h4 id="Charges_H4">Do you have unresolved charges under the Criminal Code of Canada? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="charges" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="charges" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="Contact">
+      <p id="Contact_P">How would you like us to contact you? Please enter all that apply.</p>
+    </section>
+    <section id="Email">
+      <h4 id="Email_H4">Email</h4>
+    </section>
+    <form>
+       <label for="email">example@example.com</label>
+       <input type="text" id="email" name="email">
+    </form>
+    <section id="HomeNumber">
+      <h4 id="HomeNumber_H4">Home Phone Number</h4>
+    </section>
+    <form>
+       <label for="area">Area Code</label>
+       <input type="text" id="area" name="area">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <section id="CellNumber">
+      <h4 id="CellNumber_H4">Cell Phone Number</h4>
+    </section>
+    <form>
+       <label for="area">Area Code</label>
+       <input type="text" id="area" name="area">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <section id="Address">
+      <h4 id="Address_H4">Address</h4>
+    </section>
+    <form>
+       <label for="street">Street Address</label>
+       <input type="text" id="street" name="street">
+       <label for="line">Street Address Line 2</label>
+       <input type="text" id="line" name="line">
+       <label for="city">City</label>
+       <input type="text" id="city" name="city">
+       <label for="province">Province</label>
+       <input type="text" id="province" name="province">
+       <label for="postal">Postal Code</label>
+       <input type="text" id="postal" name="postal">
+    </form>
+    <section id="Neighbourhood">
+      <h4 id="Neighbourhood_H4">Neighbourhood</h4>
+    </section>
+    <form>
+       <input type="text" id="neighbourhood" name="neighbourhood">
+    </form>
+    <section id="Transit">
+      <h4 id="Transit_H4">Do you live near transit routes? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="transit" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="transit" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="TransitYes">
+      <h4 id="TransitYes_H4">If yes, please specify:</h4>
+    <form>
+      <textarea id="transitYes" name="transitYes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <p id="ie"><small>ie: walking distance to Barrie Transit Bus stops, etc.</small></p>
+    </section>
+    <section id="Alone">
+      <h4 id="Alone_H4">Do you live alone? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="alone" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="alone" value="no">
+      <label for="no">No</label><br>
+    </form>
+    <section id="AloneNo">
+      <h4 id="AloneNo_H4">If no, please list others who live with you:</h4>
+    </section>
+    <form>
+       <label for="one">1.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <form>
+       <label for="two">2.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <form>
+       <label for="three">3.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <form>
+       <label for="four">4.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <form>
+       <label for="five">5.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <form>
+       <label for="six">6.</label>
+       <label for="name">Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+    </form>
+    <section id="Contact">
+      <h4 id="Contact_H4">Please provide at least one emergency contact:</h4>
+    </section>
+    <form>
+       <label for="one">1.</label>
+       <label for="name">Full Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <form>
+       <label for="two">2.</label>
+       <label for="name">Full Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <section id="References">
+      <h4 id="References_H4">Please provide three references (family members, friends or personal contacts are okay; email is preferred OR phone number is sufficient):</h4>
+    </section>
+    <form>
+       <label for="one">1.</label>
+       <label for="name">Full Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+       <label for="email">Email Address</label>
+       <input type="text" id="email" name="email">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <form>
+       <label for="two">2.</label>
+       <label for="name">Full Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+       <label for="email">Email Address</label>
+       <input type="text" id="email" name="email">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <form>
+       <label for="three">3.</label>
+       <label for="name">Full Name</label>
+       <input type="text" id="name" name="name">
+       <label for="relationship">Relationship</label>
+       <input type="text" id="relationship" name="relationship">
+       <label for="email">Email Address</label>
+       <input type="text" id="email" name="email">
+       <label for="phone">Phone Number</label>
+       <input type="text" id="phone" name="phone">
+    </form>
+    <section id="Hobbies">
+      <h4 id="Hobbies_H4">In order to assist with the matching process, please describe interests, activities or hobbies that you enjoy: *</h4>
+    </section>
+    <form>
+      <textarea id="hobbies" name="hobbies" rows="4" cols="50" required>
+      </textarea>
+    </form>
+    <section id="Language">
+      <h4 id="Language_H4">What languages do you speak? *</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="language1" name="language1" value="English">
+      <label for="language1">English</label>
+      <input type="checkbox" id="language2" name="language2" value="Italian">
+      <label for="language2">Italian</label><br>
+      <input type="checkbox" id="language3" name="language3" value="Chinese">
+      <label for="language3">Chinese</label>
+      <input type="checkbox" id="language4" name="language4" value="French">
+      <label for="language4">French</label><br>
+      <input type="checkbox" id="language5" name="language5" value="German">
+      <label for="language5">German</label>
+      <input type="checkbox" id="language6" name="language6" value="Portuguese">
+      <label for="language6">Portuguese</label><br>
+      <input type="checkbox" id="language7" name="language7" value="Polish">
+      <label for="language7">Polish</label>
+      <input type="checkbox" id="language8" name="language8" value="Dutch">
+      <label for="language8">Dutch</label><br>
+      <input type="checkbox" id="language9" name="language9" value="Hindi">
+      <label for="language9">Hindi</label>
+      <input type="checkbox" id="language10" name="language10" value="Urdu">
+      <label for="language10">Urdu</label><br>
+      <input type="checkbox" id="language11" name="language11" value="Spanish">
+      <label for="language11">Spanish</label>
+      <input type="checkbox" id="language12" name="language12" value="Ukrainian">
+      <label for="language12">Ukrainian</label><br>
+      <input type="checkbox" id="language13" name="language13" value="Russian">
+      <label for="language13">Russian</label>
+      <input type="checkbox" id="language14" value="">Other <input type="text" name="other"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="References">
+      <h4 id="References_H4">References</h4>
+      <p id="References_P">Please note that we will need to receive replies from at least two references before a participant can be matched.</p>
+    </section>
+    <style>
+      .center {
+      text-align: center;
+      }
+    </style>
+
+    <div class="center">
+      <h1>Barrie HomeShare Pilot Project Matching Form</h1>
+      <h2>Your Home</h2>
+    </div>
+
+    <section id="Own">
+      <h4 id="Own_H4">Do you own your own home? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="own" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="own" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="Type">
+      <h4 id="Type_H4">Type of home: *</h4>
+    </section>
+    <form>
+      <input type="radio" id="house" name="type" value="house" required>
+      <label for="house">House</label><br>
+      <input type="radio" id="apartment" name="type" value="apartment" required>
+      <label for="apartment">Condominium/Apartment</label><br>
+    </form>
+    <section id="Space">
+      <h4 id="Space_H4">Please describe the space you are offering?</h4>
+      <p id="Response_P">Response (yes/no and applicable details)</p>
+    </section>
+    <form>
+       <label for="private">Is the student's room private?</label>
+       <input type="text" id="private" name="private"><br>
+       <label for="located">Where in your home is the room located?	</label>
+       <input type="text" id="located" name="located"><br>
+       <label for="lock">Does the room's door have a lock?</label>
+       <input type="text" id="lock" name="lock"><br>
+       <label for="window">Window(s) in the room?</label>
+       <input type="text" id="window" name="window"><br>
+       <label for="storage">Is there storage space for the student?</label>
+       <input type="text" id="storage" name="storage">
+    </form>
+    <section id="Room">
+      <h4 id="Room_H4">Are you offering a furnished room? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="room" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="room" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="Furnished">
+      <h4 id="Furnished_H4">If you are offering a furnished room, please indicate what is included (leave blank if the room is totally unfurnished):</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="furnished1" name="furnished1" value="Single">
+      <label for="furnished1">Single bed</label><br>
+      <input type="checkbox" id="furnished2" name="furnished2" value="Twin">
+      <label for="furnished2">Twin size bed</label><br>
+      <input type="checkbox" id="furnished3" name="furnished3" value="Queen">
+      <label for="furnished3">Queen size bed</label><br>
+      <input type="checkbox" id="furnished4" name="furnished4" value="Closet">
+      <label for="furnished4">Closet/wardrobe</label><br>
+      <input type="checkbox" id="furnished5" name="furnished5" value="Dresser">
+      <label for="furnished5">Bureau/dresser</label><br>
+      <input type="checkbox" id="furnished6" name="furnished6" value="Desk">
+      <label for="furnished6">Desk/table</label><br>
+      <input type="checkbox" id="furnished7" name="furnished7" value="Chair">
+      <label for="furnished7">Chair</label><br>
+      <input type="checkbox" id="furnished8" value="">Other <input type="text" name="other"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="Wheelchair">
+      <h4 id="Wheelchair_H4">Is your home wheelchair accessible? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="wheelchair" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="wheelchair" value="no" required>
+      <label for="no">No</label><br>
+      <input type="radio" id="other" value="">Other <input type="text" name="other" required/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="Walker">
+      <h4 id="Walker_H4">Is your home walker accessible? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="walker" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="walker" value="no" required>
+      <label for="no">No</label><br>
+      <input type="radio" id="other" value="">Other <input type="text" name="other" required/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="Stairs">
+      <h4 id="Stairs_H4">How many stairs are required to access the room?</h4>
+    </section>
+    <form>
+      <input type="text" id="stairs" name="stairs">
+    </form>
+    <section id="Amenities">
+      <h4 id="Amenities_H4">Please indicate any amenities that will be available for the student:</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="amenities1" name="amenities1" value="Internet">
+      <label for="amenities1">Internet</label><br>
+      <input type="checkbox" id="amenities2" name="amenities2" value="Phone">
+      <label for="amenities2">Phone (landline)</label><br>
+      <input type="checkbox" id="amenities3" name="amenities3" value="TV">
+      <label for="amenities3">Television</label><br>
+      <input type="checkbox" id="amenities4" name="amenities4" value="Gaming">
+      <label for="amenities4">Gaming/Stereo/DVD/BluRay system</label><br>
+      <input type="checkbox" id="amenities5" name="amenities5" value="Laundry">
+      <label for="amenities5">Laundry</label><br>
+      <input type="checkbox" id="amenities6" name="amenities6" value="Linens">
+      <label for="amenities6">Linens provided (sheets, towels, etc.)</label>
+    </form>
+    <section id="Bathroom">
+      <h4 id="Bathroom_H4">Please indicate the bathroom facilities you are offering:</h4>
+    </section>
+    <form>
+      <label for="toilet">Toilet</label>
+      <select name="response" id="response">
+        <option value="shared">Shared</option>
+        <option value="private">Private</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="bathtub">Bathtub</label>
+      <select name="response" id="response">
+        <option value="shared">Shared</option>
+        <option value="private">Private</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="shower">Shower</label>
+      <select name="response" id="response">
+        <option value="shared">Shared</option>
+        <option value="private">Private</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+    </form>
+    <section id="Kitchen">
+      <h4 id="Kitchen_H4">Please indicate the kitchen facilities you are offering:</h4>
+    </section>
+    <form>
+      <label for="fridge">Fridge</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="freezer">Freezer</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="stove">Stove</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="oven">Oven</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="microwave">Microwave</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="dishwasher">Dishwasher</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="cupboard">Cupboard space</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+      <label for="small">Small appliances (ie: blender, toaster)</label>
+      <select name="response" id="response">
+        <option value="private">Private</option>
+        <option value="shared">Shared</option>
+        <option value="notavailable">Not available</option>
+      </select><br>
+    </form>
+    <section id="Stairs">
+      <h4 id="Stairs_H4">How many stairs are required to access other shared spaces?</h4>
+      <p id="IE_P">IE: kitchen, living room, laundry facilities</p>
+    </section>
+    <form>
+      <input type="text" id="stairs" name="stairs">
+    </form>
+    <section id="Allergies">
+      <h4 id="Allergies_H4">Do you have any allergies or sensitivities the student should be aware of? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="allergies" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="allergies" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="AllergiesYes">
+      <h4 id="AllergiesYes_H4">If you do, please explain:</h4>
+    </section>
+    <form>
+      <textarea id="allergiesyes" name="allergiesyes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Parking">
+      <h4 id="Parking_H4">Is there parking available for the student to use? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="parking" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="parking" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="ParkingYes">
+      <h4 id="ParkingYes_H4">If yes, please indicate what parking is available:</h4>
+    </section>
+    <form>
+      <input type="radio" id="driveway" name="parkingyes" value="driveway">
+      <label for="driveway">Driveway</label><br>
+      <input type="radio" id="garage" name="parkingyes" value="garage">
+      <label for="garage">Garage</label><br>
+      <input type="radio" id="street" name="parkingyes" value="street">
+      <label for="street">Street</label><br>
+      <input type="radio" id="lot" name="parkingyes" value="lot">
+      <label for="lot">Parking Lot</label><br>
+      <input type="radio" id="coverd" name="parkingyes" value="coverd">
+      <label for="coverd">Parking Lot-Covered</label><br>
+      <input type="radio" id="other" value="">Other <input type="text" name="other"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="Buy">
+      <h4 id="Buy_H4">If parking space is available, will the student need to buy a parking permit?</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="buy" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="buy" value="no">
+      <label for="no">No</label><br>
+    </form>
+    <section id="Outdoor">
+      <h4 id="Outdoor_H4">Are there any outdoor spaces available for the student to use?</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="outdoor1" name="outdoor1" value="Balcony">
+      <label for="outdoor1">Balcony</label><br>
+      <input type="checkbox" id="outdoor2" name="outdoor2" value="Porch">
+      <label for="outdoor2">Porch</label><br>
+      <input type="checkbox" id="outdoor3" name="outdoor3" value="Deck">
+      <label for="outdoor3">Deck</label><br>
+      <input type="checkbox" id="outdoor4" name="outdoor4" value="Garden">
+      <label for="outdoor4">Garden/Yard</label><br>
+      <input type="checkbox" id="outdoor5" value="">Other <input type="text" name="other"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    </form>
+    <section id="Anyone">
+      <h4 id="Anyone_H4">Are you planning to have anyone aside from the student residing in your household while you are participating in the HomeShare program? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="anyone" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="anyone" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="AnyoneYes">
+      <h4 id="AnyoneYes_H4">If yes, please describe:</h4>
+    </section>
+    <form>
+      <textarea id="anyoneyes" name="anyoneyes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Entertain">
+      <h4 id="Entertain_H4">Do you entertain guests in your home? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="entertain" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="entertain" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="EntertainYes">
+      <h4 id="EntertainYes_H4">If yes, how often?</h4>
+    </section>
+    <form>
+      <textarea id="entertainyes" name="entertainyes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Overnight">
+      <h4 id="Overnight_H4">Do you have overnight guests? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="overnight" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="overnight" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="OvernightYes">
+      <h4 id="OvernightYes_H4">If yes, how often?</h4>
+    </section>
+    <form>
+      <textarea id="overnightyes" name="overnightyes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Pets">
+      <h4 id="Pets_H4">Do you have any pets? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="pets" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="pets" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="PetsYes">
+      <h4 id="PetsYes_H4">If yes, please describe:</h4>
+      <p id="PetsMany_P">Response (please indicate how many)</p>
+    </section>
+    <form>
+       <label for="cat">Cat(s)</label>
+       <input type="text" id="cat" name="cat">
+       <label for="dog">Dog(s)</label>
+       <input type="text" id="dog" name="dog">
+       <label for="other">Other (please specify)</label>
+       <input type="text" id="other" name="other">
+    </form>
+    <section id="Bitten">
+      <h4 id="Bitten_H4">Have your pets bitten anyone?</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="bitten" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="bitten" value="no">
+      <label for="no">No</label><br>
+    </form>
+    <section id="BittenYes">
+      <h4 id="BittenYes_H4">If yes, please explain?</h4>
+    </section>
+    <form>
+      <textarea id="bittenYes" name="bittenYes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Smoke">
+      <h4 id="Smoke_H4">Are there any smokes/vape users (including cannabis) in your home? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="smoke" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="smoke" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="SmokeYes">
+      <h4 id="SmokeYes_H4">If yes, please indicate where:</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="indoors" name="indoors" value="Indoors">
+      <label for="indoors">Indoors</label><br>
+      <input type="checkbox" id="outdoors" name="outdoors" value="Outdoors">
+      <label for="outdoors">Outdoors only</label><br>
+      <input type="checkbox" id="area" name="area" value="Area">
+      <label for="area">In designated areas only</label><br>
+    </form>
+    <section id="Drink">
+      <h4 id="Drink_H4">Do you drink alcohol? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="drink" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="drink" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="DrinkYes">
+      <h4 id="DrinkYes_H4">If yes, do you drink in the home or outside the home?</h4>
+    </section>
+    <form>
+      <input type="text" id="drinkyes" name="drinkyes">
+    </form>
+    <section id="Matching">
+      <h2 id="Matching_H2">Barrie HomeShare Home Provider Matching Form</h2>
+    </section>
+    <section id="Student">
+      <h3 id="Student_H3">Student Preferences</h3>
+    </section>
+    <section id="Gender">
+      <h4 id="Gender_H4">Do you have a preference regarding the student's gender? *</h4>
+    </section>
+    <form>
+      <input type="checkbox" id="male" name="male" value="Male" required>
+      <label for="male">Male</label><br>
+      <input type="checkbox" id="female" name="female" value="Female" required>
+      <label for="female">Female</label><br>
+      <input type="checkbox" id="non" name="non" value="Non" required>
+      <label for="non">Non-binary</label><br>
+      <input type="checkbox" id="no" name="no" value="No" required>
+      <label for="No">No Preference</label><br>
+    </form>
+    <section id="Day">
+      <h4 id="Day_H4">Are you comfortable with the student having day guests? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="day" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="day" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="DayYes">
+      <h4 id="DayYes_H4">If yes, please note any comments:</h4>
+    </section>
+    <form>
+      <textarea id="dayYes" name="dayYes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Overnight">
+      <h4 id="Overnight_H4">Are you comfortable with the student having overnight guests? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="overnight" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="overnight" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="OvernightYes">
+      <h4 id="OvernightYes_H4">If yes, please note any comments:</h4>
+    </section>
+    <form>
+      <textarea id="overnightYes" name="overnightYes" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Smokeing">
+      <h4 id="Smoking_H4">Please indicate your preferences regarding student smoking/vaping/cannabis/alcohol use:</h4>
+    </section>
+    <form>
+      <label for="home">Smoking in the home is okay with me</label>
+      <select name="response" id="response">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+      <label for="area">Smoking in designated areas only is okay with me</label>
+      <select name="response" id="response">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+      <label for="outdoor">Outdoor smoking only</label>
+      <select name="response" id="response">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+      <label for="non">Non-smoking only</label>
+      <select name="response" id="response">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+      <label for="alcohol">Alcohol use in the house is okay with me	</label>
+      <select name="response" id="response">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br>
+    </form>
+    <section id="Pets">
+      <h4 id="Pets_H4">Are you okay with the student bringing pets into your home? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="pets" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="pets" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="PetsYes">
+      <h4 id="PetsYes_H4">If yes, please indicate your preferences for the student bringing pets into your home:</h4>
+      <p id="PetsMany_P">Response (if yes, please indicate how many)</p>
+    </section>
+    <form>
+       <label for="cat">Cat(s)</label>
+       <input type="text" id="cat" name="cat">
+       <label for="dog">Dog(s)</label>
+       <input type="text" id="dog" name="dog">
+       <label for="other">Other (please specify)</label>
+       <input type="text" id="other" name="other">
+    </form>
+    <section id="Students">
+      <h4 id="Students_H4">The student has agreed to commit up to 7 hours per week assisting you with household tasks or providing companionship. Please indicate your expectations for the student's involvement in your home: *</h4>
+    </section>
+    <form required>
+      <label for="companionship">Companionship</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="Cooking">Cooking</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="laundry">Laundry</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="housework">Light Housework (ie: cleaning)</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="pets">Caring for pets</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="plants">Caring for plants/garden</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="shopping">Errands/shopping</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="lifting">Lifting/reaching/carrying items</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="overnight">Overnight presence</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="snow">Snow maintenance</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+      <label for="garbage">Garbage & recycling</label>
+      <select name="response" id="response">
+        <option value="required">Required</option>
+        <option value="preferred">Preferred</option>
+        <option value="neutral">Neutral</option>
+        <option value="not">Not Necessary</option>
+      </select><br>
+    </form>
+    <section id="Tasks">
+      <h4 id="Tasks_H4">Are there any other tasks you would like assistance with?</h4>
+    </section>
+    <form>
+      <textarea id="task" name="task" rows="4" cols="50">
+      </textarea>
+    </form>
+    <section id="Matching">
+      <h2 id="Matching_H2">Barrie HomeShare Home Provider Matching Form</h2>
+    </section>
+    <section id="HomeShare">
+      <h3 id="HomeShare_H3">HomeShare Preferences</h3>
+    </section>
+    <section id="Long">
+      <h4 id="Long_H4">Ideally, how long would you like your HomeShare match to last? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="less" name="long" value="less" required>
+      <label for="less">Less than 6 months</label><br>
+      <input type="radio" id="6" name="long" value="6" required>
+      <label for="6">6-12 months</label><br>
+      <input type="radio" id="12" name="long" value="12" required>
+      <label for="12">Longer than 12 months</label><br>
+    </form>
+    <section id="Short">
+      <h4 id="Short_H4">Would you be interested in providing short-term and/or emergency housing to students later in the year? *</h4>
+    </section>
+    <form>
+      <input type="radio" id="yes" name="short" value="yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="short" value="no" required>
+      <label for="no">No</label><br>
+    </form>
+    <section id="Rent">
+      <h4 id="Rent_H4">Please indicate your preferred monthly rent *</h4>
+    </section>
+    <form>
+      <input type="text" id="rent" name="rent" required>
+    </form>
+    <section id="Anything Else">
+      <h4 id="Anything Else_H4">Is there anything else you would like us to know about your application that has not been addressed?</h4>
+    </section>
+    <form>
+      <textarea id="anythingelse" name="anythingelse" rows="4" cols="50">
+      </textarea>
+    </form>
+
+    <style>
+      .center {
+      text-align: center;
+      }
+    </style>
+
+    <div class="center">
+      <h1>Thank you for considering Barrie HomeShare</h1>
+      <form>
+        <input type="submit" value="Submit" role="button" class="btn btn-md btn-success">
+        <a role="button" class="btn btn-md btn-success" href="join.html">Go back</a>
+      </form>
+    </div>
+    
+    <!-- Footer -->
+  <footer class="py-5 bg-dark ">
+
+    <div class="col-md-12 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h4 class="font-weight-bold text-white">Contact Barrie HomeShare</h4>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <h5 class="card-title text-white">Martin Rochon</h5>
+        <p class="text-white">martin.rochon@georgiancollege.ca <br> 705-728-1968 ext.5891</p>
+     
+
+      </div>
+          <hr>
+
+
+    <div class="footer-copyright text-center text-black-50 py-3">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
